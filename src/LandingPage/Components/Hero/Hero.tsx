@@ -1,14 +1,21 @@
+import { useRef } from "react"
 import Section from "../Section/Section"
 import curve from '../../../assets/hero/curve.png'
 import Button from "../Button/Button"
 import robot from '../../../assets/hero/robot.jpg'
 import heroBackground from '../../../assets/hero/hero-background.jpg'
+import { ScrollParallax } from 'react-just-parallax'
+import { heroIcons } from "../../../data/data"
+import { Gradient } from "../../design/Hero"
+import { BackgroundCircles } from "../../design/Header"
 
 const Hero = () => {
+    const parallaxRef = useRef(null)
+
     return (
         <Section className="pt-[12rem] -mt-[5.25]" crosses crossesOffset='lg:translate-y-[5.25]'>
 
-            <div className="container relative">
+            <div className="container relative" ref={parallaxRef}>
                 <div className="relative mx-auto z-1 max-w-[62rem] text-center mb-[4rem] md:mb-20
                 lg:mb-[6rem]">
                     <h1 className="h1 mb-6 mt-10">Explore the Possibilites of AI Chatting with BrainwaveCurve</h1>
@@ -31,6 +38,16 @@ const Hero = () => {
                             <div className="h-full bg-n-10 rounded-t-[0.9rem]">
                                 <div>
                                     <img src={robot} className="w-full" />
+                                    <ScrollParallax isAbsolutelyPositioned>
+                                        <ul className="hidden xl:flex absolute -left-[5.5rem] bottom-[6.5rem]
+                                            bg-n-9 border border-n-3 px-1 py-1 rounded-2xl">
+                                            {heroIcons.map((icon, index) => (
+                                                <li className="px-3 py-3" key={index}>
+                                                    <img src={icon} />
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </ScrollParallax>
                                 </div>
                             </div>
                         </div>
@@ -40,7 +57,8 @@ const Hero = () => {
                             className="w-full"
                             width={1440}
                             height={1800}
-                            alt="" />
+                            alt=""
+                        />
                     </div>
                 </div>
             </div>
