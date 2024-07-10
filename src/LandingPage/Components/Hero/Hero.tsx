@@ -6,8 +6,7 @@ import robot from '../../../assets/hero/robot.jpg'
 import heroBackground from '../../../assets/hero/hero-background.jpg'
 import { ScrollParallax } from 'react-just-parallax'
 import { heroIcons } from "../../../data/data"
-import { Gradient } from "../../design/Hero"
-import { BackgroundCircles } from "../../design/Header"
+import Generating from "../../design/Genaratings"
 
 const Hero = () => {
     const parallaxRef = useRef(null)
@@ -37,9 +36,11 @@ const Hero = () => {
                         <div className="relative bg-n-8 rounded-[1rem]">
                             <div className="h-full bg-n-10 rounded-t-[0.9rem]">
                                 <div>
-                                    <img src={robot} className="w-full" />
+                                    <img src={robot} className="w-full"/>
+                                    <Generating className="absolute left-4 right-4 bottom-5 md:left-1/4
+                                    md:right-auto md:bottom-8 md:w-[31rem] bg-n-9"/>
                                     <ScrollParallax isAbsolutelyPositioned>
-                                        <ul className="hidden xl:flex absolute -left-[5.5rem] bottom-[6.5rem]
+                                        <ul className="hidden xl:flex absolute -left-[5.5rem] bottom-[11.5rem]
                                             bg-n-9 border border-n-3 px-1 py-1 rounded-2xl">
                                             {heroIcons.map((icon, index) => (
                                                 <li className="px-3 py-3" key={index}>
