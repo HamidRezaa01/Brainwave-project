@@ -7,6 +7,7 @@ import heroBackground from '../../../assets/hero/hero-background.jpg'
 import { ScrollParallax } from 'react-just-parallax'
 import { heroIcons } from "../../../data/data"
 import Generating from "../../design/Genaratings"
+import Notifications from "../../design/Notifications"
 
 const Hero = () => {
     const parallaxRef = useRef(null)
@@ -36,9 +37,10 @@ const Hero = () => {
                         <div className="relative bg-n-8 rounded-[1rem]">
                             <div className="h-full bg-n-10 rounded-t-[0.9rem]">
                                 <div>
-                                    <img src={robot} className="w-full"/>
-                                    <Generating className="absolute left-4 right-4 bottom-5 md:left-1/4
-                                    md:right-auto md:bottom-8 md:w-[31rem] bg-n-9"/>
+                                    <img src={robot} className="w-full" />
+                                    <ScrollParallax isAbsolutelyPositioned>
+                                        <Generating />
+                                    </ScrollParallax>
                                     <ScrollParallax isAbsolutelyPositioned>
                                         <ul className="hidden xl:flex absolute -left-[5.5rem] bottom-[11.5rem]
                                             bg-n-9 border border-n-3 px-1 py-1 rounded-2xl">
@@ -48,6 +50,9 @@ const Hero = () => {
                                                 </li>
                                             ))}
                                         </ul>
+                                    </ScrollParallax>
+                                    <ScrollParallax isAbsolutelyPositioned>
+                                        <Notifications />
                                     </ScrollParallax>
                                 </div>
                             </div>

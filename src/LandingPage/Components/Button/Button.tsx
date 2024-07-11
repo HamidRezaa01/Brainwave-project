@@ -10,8 +10,7 @@ type Button = {
 
 const Button = ({ className, href, onClick, children, white }: Button) => {
   const classes = `button relative inline-flex justify-center items-center
-   h-11 transition-colors px-4 ${className || ''} ${white ? 'text-n-8' : 'text-n-1'}
-  `
+   h-11 transition-colors px-4 ${className || ''} ${white ? 'text-n-8' : 'text-n-1'}`
 
   const spanClasses = 'relative z-10'
 
