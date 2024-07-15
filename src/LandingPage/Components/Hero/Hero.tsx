@@ -38,9 +38,7 @@ const Hero = () => {
                             <div className="h-full bg-n-10 rounded-t-[0.9rem]">
                                 <div>
                                     <img src={robot} className="w-full" />
-                                    <ScrollParallax isAbsolutelyPositioned>
-                                        <Generating />
-                                    </ScrollParallax>
+                                    <Generating />
                                     <ScrollParallax isAbsolutelyPositioned>
                                         <ul className="hidden xl:flex absolute -left-[5.5rem] bottom-[11.5rem]
                                             bg-n-9 border border-n-3 px-1 py-1 rounded-2xl">
