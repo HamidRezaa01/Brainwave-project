@@ -1,4 +1,5 @@
 
+// Navigation
 
 type NavigationItems = {
     id: number
@@ -17,8 +18,11 @@ export const navigationItems: NavigationItems[] =
         { id: 5, title: "Sign in", url: "#login", onlyMobile: true },
     ]
 
+
+// benefits
+
 type Benefits = {
-    id: string
+    id: number
     title: string
     text: string
     backgroundUrl: string
@@ -29,7 +33,7 @@ type Benefits = {
 
 export const benefits: Benefits[] = [
     {
-        id: "0",
+        id: 0,
         title: "Ask anything",
         text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
         backgroundUrl: "./src/assets/benefits/card-1.svg",
@@ -38,7 +42,7 @@ export const benefits: Benefits[] = [
         light: false,
     },
     {
-        id: "1",
+        id: 1,
         title: "Improve everyday",
         text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
         backgroundUrl: "./src/assets/benefits/card-2.svg",
@@ -47,7 +51,7 @@ export const benefits: Benefits[] = [
         light: true,
     },
     {
-        id: "2",
+        id: 2,
         title: "Connect everywhere",
         text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
         backgroundUrl: "./src/assets/benefits/card-3.svg",
@@ -56,7 +60,7 @@ export const benefits: Benefits[] = [
         light: false,
     },
     {
-        id: "3",
+        id: 3,
         title: "Fast responding",
         text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
         backgroundUrl: "./src/assets/benefits/card-4.svg",
@@ -65,7 +69,7 @@ export const benefits: Benefits[] = [
         light: true,
     },
     {
-        id: "4",
+        id: 4,
         title: "Ask anything",
         text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
         backgroundUrl: "./src/assets/benefits/card-5.svg",
@@ -74,7 +78,7 @@ export const benefits: Benefits[] = [
         light: false,
     },
     {
-        id: "5",
+        id: 5,
         title: "Improve everyday",
         text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
         backgroundUrl: "./src/assets/benefits/card-6.svg",
@@ -83,3 +87,95 @@ export const benefits: Benefits[] = [
         light: false,
     },
 ];
+
+// Collabration
+
+type CollabContent = {
+    id: number
+    title: string
+}
+  
+export const collabContent: CollabContent[] = [
+    {
+      id: 0,
+      title: "Seamless Integration",
+    },
+    {
+      id: 1,
+      title: "Smart Automation",
+    },
+    {
+      id: 2,
+      title: "Top-notch Security",
+    },
+  ]
+
+//CollabApps
+
+type CollabApps = {
+    id: number
+    title: string
+    icon: string
+    width: number
+    height: number
+
+}
+
+export const collabApps: CollabApps [] = [
+    {
+      id: 0,
+      title: "Figma",
+      icon: './src/assets/collaboration/figma.png',
+      width: 26,
+      height: 36,
+    },
+    {
+      id: 1,
+      title: "Notion",
+      icon: './src/assets/collaboration/notion.png',
+      width: 34,
+      height: 36,
+    },
+    {
+      id: 2,
+      title: "Discord",
+      icon: './src/assets/collaboration/discord.png',
+      width: 36,
+      height: 28,
+    },
+    {
+      id: 3,
+      title: "Slack",
+      icon: './src/assets/collaboration/slack.png',
+      width: 34,
+      height: 35,
+    },
+    {
+      id: 4,
+      title: "Photoshop",
+      icon: './src/assets/collaboration/photoshop.png',
+      width: 34,
+      height: 34,
+    },
+    {
+      id: 5,
+      title: "Protopie",
+      icon: './src/assets/collaboration/protopie.png',
+      width: 34,
+      height: 34,
+    },
+    {
+      id: 6,
+      title: "Framer",
+      icon: './src/assets/collaboration/framer.png',
+      width: 26,
+      height: 34,
+    },
+    {
+      id: 7,
+      title: "Raindrop",
+      icon: './src/assets/collaboration/raindrop.png',
+      width: 38,
+      height: 32,
+    },
+  ];
