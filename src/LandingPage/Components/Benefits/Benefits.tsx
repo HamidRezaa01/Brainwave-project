@@ -7,8 +7,8 @@ import ClipPath from "../../../assets/svg/ClipPath"
 const Benefits = () => {
 
     return (
-        <Section className="features">
-            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 container mx-auto relative z-2">
+        <section className="features">
+            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 container mx-auto relative z-2 mb-20">
                 {benefits.map((item) => (
                     <div
                         className="relative p-0.5 bg-no-repeat bg-[length:100%_100%]
@@ -53,7 +53,7 @@ const Benefits = () => {
                     </div>
                 ))}
             </div>
-        </Section>
+        </section>
     )
 }
 
