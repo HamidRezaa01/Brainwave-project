@@ -2,6 +2,7 @@ import Header from "./Header/Header"
 import Hero from "./Hero/Hero"
 import ButtonGradient from '../../assets/svg/ButtonGradient'
 import Benefits from "./Benefits/Benefits"
+import Collabration from "./Collabration.tsx/Collabration"
 
 const LandingPageLayout = () => {
     return (
@@ -10,6 +11,7 @@ const LandingPageLayout = () => {
                 <Header />
                 <Hero />
                 <Benefits/>
+                <Collabration/>
             </div>
             <ButtonGradient />
         </>
