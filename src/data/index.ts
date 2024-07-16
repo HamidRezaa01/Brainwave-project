@@ -179,3 +179,26 @@ export const collabApps: CollabApps [] = [
       height: 32,
     },
   ];
+
+
+// Brainwave-Services
+
+type BrainwaveServices = {
+  id: number
+  title: string
+}
+
+export const brainwaveServices: BrainwaveServices [] = [
+  {
+    id: 0,
+    title:"Photo generating"
+  },
+  {
+    id: 1,
+    title:"Photo enhance"
+  },
+  {
+    id: 2,
+    title:"Seamless Integration"
+  },
+];
