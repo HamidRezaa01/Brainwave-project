@@ -89,7 +89,8 @@ const Services = () => {
                             </li>
                         ))}
                     </ul>
-                    <div className='relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem] mt-'>
+
+                    <div className='relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem] mt-15'>
                         <img
                             src={service3}
                             className='w-full h-full object-cover'
