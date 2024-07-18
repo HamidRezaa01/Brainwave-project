@@ -4,6 +4,7 @@ import ButtonGradient from '../../assets/svg/ButtonGradient'
 import Benefits from "./Benefits/Benefits"
 import Collabration from "./Collabration/Collabration"
 import Services from "./Services/Services"
+import Pricing from "./Pricing/Pricing"
 
 const LandingPageLayout = () => {
     return (
@@ -14,6 +15,7 @@ const LandingPageLayout = () => {
                 <Benefits/>
                 <Collabration/>
                 <Services/>
+                <Pricing/>
             </div>
             <ButtonGradient />
         </>
